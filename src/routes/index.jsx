@@ -30,6 +30,6 @@ export const routes=[
         path:"/404",
         element:<Error404/>,
     }
-
+//this is a comment
 ]
 
