@@ -13,21 +13,21 @@ const Index = () => {
         />
         <div className="flex flex-col justify-around w-full h-full items-center">
           <div>
-          <h1 className="text-white text-5xl font-bold "> Envision Nepal</h1>
-            <p className="text-white text-sm my-4 text-center">Procurement portal for every government trainings.</p>
+            <h1 className="text-white text-5xl font-bold "> Envision Nepal</h1>
+            <p className="text-white text-sm my-4 text-center">
+              Procurement portal for every government trainings.
+            </p>
           </div>
 
           <div className="mt-14">
-            <p className="text-white">
-              Nepal Government
-            </p>
+            <p className="text-white">Nepal Government</p>
             <div className="flex justify-center mt-4">
               <img src="/nepal.jpg" alt="" className="h-10 w-10 opacity-50" />
             </div>
           </div>
         </div>
       </div>
-      <div className="min-h-screen w-screen bg-gray-100">
+      <div className="min-h-screen w-screen bg-gray-100 flex flex-col">
         <main className="container mx-auto py-8 flex flex-col items-center justify-center px-56">
           <h1 className="text-4xl font-bold mb-14">
             Welcome to Envision Nepal!
@@ -59,19 +59,12 @@ const Index = () => {
             requirements. Say goodbye to tedious supplier searches and discover
             the perfect partners for your business.
           </p>
-          <p className="text-lg text-gray-600 mb-8 text-justify">
-            We also offer a secure and transparent communication system that
-            facilitates seamless collaboration between buyers and suppliers.
-            Connect directly with potential suppliers, discuss project details,
-            negotiate contracts, and track progress, all within our integrated
-            messaging platform. Streamline your communication and ensure smooth
-            procurement processes from start to finish.
-          </p>
+          
           {/* Additional content goes here */}
         </main>
 
-        <footer className="bg-gray-200 py-4 ">
-          <div className="container mx-auto px-4">
+        <footer className="bg-gray-200 py-4 flex-shrink-0">
+          <div className="container mx-auto px-4 flex flex-col h-full justify-center">
             <p className="text-center text-gray-600">
               &copy; {new Date().getFullYear()} Envision Nepal. All rights
               reserved.
@@ -79,7 +72,6 @@ const Index = () => {
           </div>
         </footer>
       </div>
-      );
     </Layout>
   );
 };
